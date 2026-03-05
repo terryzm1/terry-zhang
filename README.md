@@ -4,7 +4,7 @@ A personal portfolio website showcasing my skills, projects, and contact informa
 
 ## Live Site
 
-> _Add your deployed URL here once hosted (e.g., GitHub Pages, Netlify, etc.)_
+zhang-tianyu.com
 
 ## About
 
