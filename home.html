@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tianyu Zhang - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <a href="/">Tianyu Zhang</a>
+        </div>
+
+        <div class="right">
+            <a href="resumepg.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-file"></i>
+                <span>Resume</span>
+            </a>
+
+            <a href="http://linkedin.com/in/terryzm" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:terryzhang001@icloud.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- SECTION 1 -->
+        <section class="bio-section">
+            <div class="text">
+                <h2>Hi, I'm Terry 👋</h2>
+                <p>Actually, my legal name is Tianyu Zhang (张天予), but I just go by Terry. I'm 22 years old and recently graduated from the University of Texas at Austin with a degree in Mechanical Engineering. Alongside my major, I completed a minor in Computer Science, which is where I developed most of my coding skills. Outside of academics, I have a wide range of interests. Music and sports have always been a big part of my life. I currently play the flute, piano, and enjoy playing volleyball. More recently, I’ve started exploring new hobbies like cooking and traveling. </p>
+            
+
+                <div class="links">
+
+                    <a href="#skills">
+                        <i class="fa-solid fa-wrench"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#projects">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Projects</span>
+                    </a> 
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+            <div class="portrait">
+                <img src="portrait.webp" alt="terry zhang portrait">
+            </div>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">Below is the software I’ve been working with in school. I have 4 years of experience with Python and Solidworks, 3 years with MATLAB, and 2 years of HTML and CSS. A complete list of the skills and software I’ve worked with can be found in my resume.</div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="python.webp" alt="python logo">
+                    <span>Python</span>
+                </div>
+
+                <div class="cell">
+                    <img src="matlab.webp" alt="matlab logo">
+                    <span>Matlab</span>
+                </div>
+
+                <div class="cell">
+                    <img src="solidworks.webp" alt="solidworks logo">
+                    <span>Solidworks</span>
+                </div>
+
+                <div class="cell">
+                    <img src="html.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="css.webp" alt="css logo" id="css-logo">
+                    <span>CSS</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section id="projects" class="projects-section">
+
+            <h2>Projects</h2>
+            <div class="pcontent">
+            <div class="cells">
+                <div class="cell">
+                    <!-- <i class="fa-solid fa-globe"></i> -->
+                    <a href="webprojects.zip">Web Development</a>
+                </div>
+
+                <div class="cell">
+                    <!-- <i class="fa-solid fa-database"></i> -->
+                    <a href="dataprojects.zip">Data Analytics</a>
+                </div>
+
+                <div class="cell">
+                    <!-- <i class="fa-brands fa-swift"></i> -->
+                    <a href="iosprojects.zip">iOS Programming</a>
+                </div>
+
+                <div class="cell">
+                    <!-- <i class="fa-solid fa-screwdriver-wrench"></i> -->
+                    <a href="seniordesignproject.zip">Senior Design Code</a>
+                </div>
+            </div>
+
+            <div class="text">Here are downloadable .zip files of some of my coding assignments/projects in school. Note that some of the websites will not run as they were previously run on school servers and not a local host. </div>
+            </div>
+
+        </section>
+        
+        <!-- SECTION 4 -->
+         <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">Have a question, idea, or just want to say hello? Feel free to reach out using the form below. Whether it's about a project, collaboration, or anything in between, I’d love to hear from you. Just drop your name, email, and a message, and I’ll get back to you as soon as I can.</div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="name">Email</label>
+                    <input type="text" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+         </section>
+
+    </main>
+</body>
+</html>
