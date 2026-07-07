@@ -15,11 +15,11 @@
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f855a'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='30' font-weight='bold' fill='white' text-anchor='middle'%3ETZ%3C/text%3E%3C/svg%3E">
 
     <script>
-        (function () {
-            const saved = localStorage.getItem('theme');
-            const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            document.documentElement.dataset.theme = theme;
-        })();
+        function autoTheme() {
+            const hour = new Date().getHours();
+            return (hour >= 19 || hour < 7) ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = localStorage.getItem('theme') || autoTheme();
     </script>
 
     <link rel="stylesheet" href="styles.css">
@@ -226,6 +226,16 @@
         });
 
         syncThemeIcon();
+
+        // Follow the clock while the page stays open, unless manually overridden
+        setInterval(() => {
+            if (localStorage.getItem('theme')) return;
+            const next = autoTheme();
+            if (document.documentElement.dataset.theme !== next) {
+                document.documentElement.dataset.theme = next;
+                syncThemeIcon();
+            }
+        }, 60000);
     </script>
 </body>
 </html>
