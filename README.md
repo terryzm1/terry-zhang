@@ -10,10 +10,11 @@ zhang-tianyu.com
 
 This is a responsive single-page portfolio website built with vanilla HTML and CSS. It features:
 
-- **Bio** section with a personal introduction
+- **Hero** section with a personal introduction
 - **Skills** section highlighting technical proficiencies (Python, MATLAB, SolidWorks, HTML, CSS)
 - **Projects** section with downloadable project files from coursework
-- **Contact** form for reaching out
+- **Contact** form for reaching out (powered by [FormSubmit](https://formsubmit.co/))
+- Sticky navigation, responsive layout, and SEO/Open Graph metadata
 
 ## Tech Stack
 
@@ -24,10 +25,10 @@ This is a responsive single-page portfolio website built with vanilla HTML and C
 
 ## Getting Started
 
-To run locally, simply open `home.html` in a browser:
+To run locally, simply open `index.html` in a browser:
 
 ```bash
-open home.html
+open index.html
 ```
 
 No build tools or dependencies required.
@@ -36,7 +37,7 @@ No build tools or dependencies required.
 
 ```
 terry-zhang/
-├── home.html          # Main HTML page
+├── index.html         # Main HTML page
 ├── styles.css         # Stylesheet
 ├── portrait.webp      # Profile photo
 ├── resumepg.pdf       # Resume (PDF)
