@@ -7,9 +7,26 @@
     --background-color: #f5f6f8;
     --surface-color: #ffffff;
     --border-color: #e2e5ea;
+    --header-bg: rgba(245, 246, 248, 0.85);
     --shadow-sm: 0 1px 3px rgba(26, 28, 32, 0.06);
     --shadow-md: 0 8px 24px rgba(26, 28, 32, 0.1);
     --radius: 12px;
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    --text-color: #e8eaed;
+    --muted-color: #9aa1ac;
+    --accent-color: #4caf7d;
+    --accent-dark: #66c193;
+    --accent-soft: #1d3a2b;
+    --background-color: #121417;
+    --surface-color: #1b1e24;
+    --border-color: #2b2f37;
+    --header-bg: rgba(18, 20, 23, 0.85);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    color-scheme: dark;
 }
 
 * {
@@ -28,6 +45,7 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
     line-height: 1.7;
+    transition: background-color 0.25s, color 0.25s;
 }
 
 a {
@@ -44,7 +62,7 @@ section {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(245, 246, 248, 0.85);
+    background-color: var(--header-bg);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
@@ -98,6 +116,26 @@ nav .nav-links a.nav-cta {
 nav .nav-links a.nav-cta:hover {
     color: var(--background-color);
     background-color: var(--accent-dark);
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 nav .nav-cta i {
