@@ -3,239 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tianyu (Terry) Zhang — Mechanical Engineer & Developer</title>
-    <meta name="description" content="Personal portfolio of Tianyu (Terry) Zhang, a mechanical engineering graduate from UT Austin with a minor in computer science. Skills, projects, and contact.">
+    <title>张天予 · Tianyu (Terry) Zhang</title>
+    <meta name="description" content="Tianyu (Terry) Zhang — masters student in data science at UT Austin and a mechanical engineering graduate, working toward ML engineering. Bio, projects on GitHub, and interests.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zhang-tianyu.com/">
-    <meta property="og:title" content="Tianyu (Terry) Zhang — Mechanical Engineer & Developer">
-    <meta property="og:description" content="Mechanical engineering graduate from UT Austin with a minor in computer science. Skills, projects, and contact.">
+    <meta property="og:title" content="张天予 · Tianyu (Terry) Zhang">
+    <meta property="og:description" content="Masters student in data science at UT Austin and a mechanical engineering graduate, working toward ML engineering.">
     <meta property="og:image" content="https://zhang-tianyu.com/portrait.webp">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f855a'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='30' font-weight='bold' fill='white' text-anchor='middle'%3ETZ%3C/text%3E%3C/svg%3E">
-
-    <script>
-        function autoTheme() {
-            const hour = new Date().getHours();
-            return (hour >= 19 || hour < 7) ? 'dark' : 'light';
-        }
-        document.documentElement.dataset.theme = localStorage.getItem('theme') || autoTheme();
-    </script>
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234e5d46'/%3E%3Ctext x='32' y='45' font-family='Songti SC, serif' font-size='40' fill='%23f4f2ed' text-anchor='middle'%3E%E5%BC%A0%3C/text%3E%3C/svg%3E">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <!-- NAVBAR -->
-    <header class="site-header">
-        <nav>
-            <a class="brand" href="/">
-                <span class="brand-full">Tianyu Zhang</span>
-                <span class="brand-short">TZ</span>
-            </a>
-
-            <div class="nav-links">
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <a class="nav-cta" href="resumepg.pdf" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-file"></i>
-                    <span>Resume</span>
-                </a>
-                <button class="theme-toggle" type="button" aria-label="Toggle night mode">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-text">
-                <p class="kicker">Mechanical Engineer &middot; Developer</p>
-                <h1>Hi, I'm Terry <span class="wave">👋</span></h1>
-                <p>My legal name is Tianyu Zhang (张天予), but I go by Terry. I recently graduated from the University of Texas at Austin with a degree in Mechanical Engineering and a minor in Computer Science, which is where I developed most of my coding skills.</p>
-                <p>Outside of academics, music and sports have always been a big part of my life — I play the flute and piano, and enjoy volleyball. More recently, I've been exploring new hobbies like cooking and traveling.</p>
-
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#projects">
-                        <i class="fa-solid fa-code"></i>
-                        <span>View Projects</span>
-                    </a>
-                    <a class="btn btn-secondary" href="#contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Get in Touch</span>
-                    </a>
-                    <a class="icon-link" href="http://linkedin.com/in/terryzm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-portrait">
-                <img src="portrait.webp" alt="Portrait of Terry Zhang" width="340" height="340">
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <p class="section-intro">Software I've worked with throughout school — 4 years of Python and SolidWorks, 3 years of MATLAB, and 2 years of HTML and CSS. A complete list is in my <a href="resumepg.pdf" target="_blank" rel="noopener noreferrer">resume</a>.</p>
-
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="python.webp" alt="Python logo">
-                    <span class="skill-name">Python</span>
-                    <span class="skill-years">4 years</span>
-                </div>
-                <div class="skill-card">
-                    <img src="solidworks.webp" alt="SolidWorks logo">
-                    <span class="skill-name">SolidWorks</span>
-                    <span class="skill-years">4 years</span>
-                </div>
-                <div class="skill-card">
-                    <img src="matlab.webp" alt="MATLAB logo">
-                    <span class="skill-name">MATLAB</span>
-                    <span class="skill-years">3 years</span>
-                </div>
-                <div class="skill-card">
-                    <img src="html.webp" alt="HTML logo">
-                    <span class="skill-name">HTML</span>
-                    <span class="skill-years">2 years</span>
-                </div>
-                <div class="skill-card">
-                    <img src="css.webp" alt="CSS logo">
-                    <span class="skill-name">CSS</span>
-                    <span class="skill-years">2 years</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <p class="section-intro">Selected coursework and projects from school, available as downloadable source code. Some of the web projects were built for school servers and won't run on a local host.</p>
-
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
-                    <h3>Web Development</h3>
-                    <p>Websites and front-end coursework built with HTML, CSS, and JavaScript.</p>
-                    <a class="project-link" href="webprojects.zip">
-                        <i class="fa-solid fa-download"></i> Download source
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-icon"><i class="fa-solid fa-database"></i></div>
-                    <h3>Data Analytics</h3>
-                    <p>Data analysis and visualization projects written primarily in Python.</p>
-                    <a class="project-link" href="dataprojects.zip">
-                        <i class="fa-solid fa-download"></i> Download source
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-icon"><i class="fa-brands fa-swift"></i></div>
-                    <h3>iOS Programming</h3>
-                    <p>Mobile app assignments and projects developed in Swift for iOS.</p>
-                    <a class="project-link" href="iosprojects.zip">
-                        <i class="fa-solid fa-download"></i> Download source
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                    <h3>Senior Design</h3>
-                    <p>Code from my mechanical engineering senior design capstone project.</p>
-                    <a class="project-link" href="seniordesignproject.zip">
-                        <i class="fa-solid fa-download"></i> Download source
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p class="section-intro">Have a question, an idea, or just want to say hello? Drop your name, email, and a message, and I'll get back to you as soon as I can.</p>
-
-            <div class="contact-group">
-                <form action="https://formsubmit.co/terryzhang001@icloud.com" method="POST">
-                    <input type="hidden" name="_subject" value="New message from zhang-tianyu.com">
-                    <input type="hidden" name="_captcha" value="false">
-
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required autocomplete="name">
-                        </div>
-                        <div class="form-field">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required autocomplete="email">
-                        </div>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <span>&copy; 2026 Tianyu Zhang</span>
-        <div class="footer-links">
-            <a href="http://linkedin.com/in/terryzm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="mailto:terryzhang001@icloud.com" aria-label="Email">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="resumepg.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
-                <i class="fa-solid fa-file"></i>
-            </a>
-        </div>
-    </footer>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Noto Serif SC is subset to the few characters used as display marks (张天予作).
+         Add any new display glyph to the &text= list below or it will fall back to a system serif. -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300&text=%E5%BC%A0%E5%A4%A9%E4%BA%88%E4%BD%9C&display=swap" rel="stylesheet">
 
     <script>
-        const themeToggle = document.querySelector('.theme-toggle');
-        const themeIcon = themeToggle.querySelector('i');
+        // Runs before paint: a stored choice wins, otherwise follow the OS.
+        try {
+            var t = localStorage.getItem('theme');
+            document.documentElement.dataset.theme =
+                t || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        } catch (e) { /* private mode: the stylesheet's media query still applies */ }
+    </script>
 
-        function syncThemeIcon() {
-            const dark = document.documentElement.dataset.theme === 'dark';
-            themeIcon.className = dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip" href="#bio">Skip to content</a>
+
+    <!-- LANDING — shown once per load; removed from the document on first scroll -->
+    <div class="landing" id="landing">
+        <span class="landing-name cjk">张天予</span>
+        <span class="landing-latin">TIANYU (TERRY) ZHANG</span>
+        <span class="landing-cue">SCROLL</span>
+    </div>
+
+    <!-- CHROME — hidden until the reader scrolls or clicks -->
+    <header class="chrome" id="chrome">
+        <nav class="pill" id="nav" aria-label="Sections">
+            <span class="nav-hi" id="navHighlight" aria-hidden="true"></span>
+            <div class="nav-items" id="navItems">
+                <a class="navitem brand" href="#bio"><span class="cjk">张</span><span class="brand-name">Terry Zhang</span></a>
+                <a class="navitem" href="#projects">Projects</a>
+                <a class="navitem" href="#interests">Interests</a>
+            </div>
+        </nav>
+
+        <div class="pill pill-right">
+            <button class="navitem theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+                <svg class="icon icon-moon" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M13.8 9.6A5.9 5.9 0 0 1 6.4 2.2 5.9 5.9 0 1 0 13.8 9.6Z"></path>
+                </svg>
+                <svg class="icon icon-sun" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true">
+                    <circle cx="8" cy="8" r="3.1"></circle>
+                    <path d="M8 1v1.6M8 13.4V15M15 8h-1.6M2.6 8H1M12.9 3.1l-1.1 1.1M4.2 11.8l-1.1 1.1M12.9 12.9l-1.1-1.1M4.2 4.2 3.1 3.1"></path>
+                </svg>
+            </button>
+            <a class="navitem" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="navitem" href="resumepg.pdf" target="_blank" rel="noopener noreferrer" data-optional>Resume</a>
+        </div>
+    </header>
+
+    <div class="page" id="page">
+        <main>
+            <!-- 01 BIO -->
+            <section class="sect" id="bio">
+                <div class="bio-grid">
+                    <div class="bio-text">
+                        <h1 class="hello">Hello! I’m Tianyu <span class="wave" aria-hidden="true">👋</span></h1>
+                        <p>But most people just call me Terry. I’m currently a masters student studying data science at UT, and a previous mechanical engineering graduate. After deciding to switch from traditional engineering to more tech oriented roles, I aspire to be an ML engineer, hoping to scale and maintain ML models.</p>
+                        <p>My hobbies are what allow me to keep pushing forward. Music has been important to me since I was 4, and I still keep up with playing the flute. I also experimented with a multitude of sports, but I ultimately landed on volleyball as my main sport.</p>
+                        <p>More recently, I’ve started getting into photography, taking photos of landscapes when traveling and some occasional portraits for grad pics. I also ran a bakery pop-up called “seoulgum” and sold over 300 pieces of salt bread in the Austin area.</p>
+                    </div>
+
+                    <div class="portrait">
+                        <img src="portrait.webp" alt="Portrait of Terry Zhang" width="470" height="588" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 02 PROJECTS -->
+            <section class="sect" id="projects">
+                <p class="sect-label">PROJECTS</p>
+                <p class="sect-intro">Coursework and personal work &mdash; last updated on 9/24/2026.</p>
+                <div class="grid grid-projects">
+                    <a class="card card-accent" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <div class="card-head">
+                                <span class="card-label">PROJECTS &middot; 01</span>
+                                <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                            </div>
+                            <h2 class="card-title">SEC 10k RAG Pipeline</h2>
+                            <p class="card-text">Domain specific RAG project with a BERT reranker.</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <div class="card-head">
+                                <span class="card-label">PROJECTS &middot; 02</span>
+                                <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                            </div>
+                            <h2 class="card-title">Application Tracker</h2>
+                            <p class="card-text">My workflow for organizing job applications.</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <div class="card-head">
+                                <span class="card-label">PROJECTS &middot; 03</span>
+                                <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                            </div>
+                            <h2 class="card-title">Web Development</h2>
+                            <p class="card-text">Websites and front-end coursework in HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <div class="card-head">
+                                <span class="card-label">PROJECTS &middot; 04</span>
+                                <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                            </div>
+                            <h2 class="card-title">Data Analytics</h2>
+                            <p class="card-text">Analysis and visualization projects written using pandas.</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <div class="card-head">
+                                <span class="card-label">PROJECTS &middot; 05</span>
+                                <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                            </div>
+                            <h2 class="card-title">iOS Programming</h2>
+                            <p class="card-text">iOS app assignments and projects developed in Swift.</p>
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <div class="card-head">
+                                <span class="card-label">PROJECTS &middot; 06</span>
+                                <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                            </div>
+                            <h2 class="card-title">Automated plant caretaker &middot; Senior Design</h2>
+                            <p class="card-text">Arduino and iOS code for an automated plant caretaker system.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 03 INTERESTS -->
+            <section class="sect" id="interests">
+                <p class="sect-label">INTERESTS (unfinished)</p>
+                <p class="sect-intro">A collection of my many hobbies and interests. Clickable links and pictures coming soon.</p>
+                <div class="grid grid-interests">
+                    <div class="card tall">
+                        <div class="card-head">
+                            <span class="card-label">PHOTOGRAPHY</span>
+                            <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                        </div>
+                        <div class="ph"><span>[ 3:4 ]</span></div>
+                    </div>
+
+                    <div class="card wide">
+                        <div class="card-head">
+                            <span class="card-label">TRAVEL</span>
+                            <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                        </div>
+                        <div class="ph"><span>[ 16:9 ]</span></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <span class="card-label">FLUTE</span>
+                            <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                        </div>
+                        <div class="ph"><span>[ 1:1 ]</span></div>
+                    </div>
+
+                    <div class="card wide">
+                        <div class="card-body">
+                            <div class="card-head">
+                                <span class="card-label">BAKING</span>
+                            </div>
+                            <h2 class="card-title">seoulgum</h2>
+                            <p class="card-text">A salt bread popup based in Austin.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <span class="card-label">VOLLEYBALL</span>
+                            <span class="card-arrow" aria-hidden="true">&#8599;</span>
+                        </div>
+                        <div class="ph"><span>[ 1:1 ]</span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 04 CONTACT -->
+        <footer class="contact" id="contact">
+            <p class="contact-line">Have a question, an idea, or just want to say hello?</p>
+            <a class="contact-mail" href="mailto:terryzhang001@icloud.com">terryzhang001@icloud.com</a>
+
+            <div class="colophon">
+                <span>&copy; 2026 <span class="cjk">张天予</span> TIANYU ZHANG</span>
+                <span class="colophon-links">
+                    <a class="underline-hover" href="https://github.com/terryzm1" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                    <a class="underline-hover" href="https://linkedin.com/in/terryzm" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                    <a class="underline-hover" href="resumepg.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    (function () {
+        'use strict';
+
+        var body = document.body;
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        /* ------------------------------------------------------------------
+           Landing hand-off — one scroll takes you to the bio, and the landing
+           leaves the document. The scroll is pinned while it plays so leftover
+           momentum cannot carry past the bio.
+           ------------------------------------------------------------------ */
+        var landing = document.getElementById('landing');
+        var handed = false;
+        var holdUntil = 0;
+
+        function toTop() {
+            window.scrollTo(0, 0);
         }
 
-        themeToggle.addEventListener('click', () => {
-            const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-            document.documentElement.dataset.theme = next;
-            localStorage.setItem('theme', next);
-            syncThemeIcon();
-        });
+        function handOff() {
+            if (handed || !landing) return;
+            handed = true;
+            reveal();
 
-        syncThemeIcon();
-
-        // Follow the clock while the page stays open, unless manually overridden
-        setInterval(() => {
-            if (localStorage.getItem('theme')) return;
-            const next = autoTheme();
-            if (document.documentElement.dataset.theme !== next) {
-                document.documentElement.dataset.theme = next;
-                syncThemeIcon();
+            if (reduce) {
+                landing.remove();
+                toTop();
+                return;
             }
-        }, 60000);
+
+            toTop();
+            body.classList.add('is-leaving');
+            holdUntil = Date.now() + 2300;
+
+            setTimeout(function () {
+                landing.remove();
+                toTop();
+                body.classList.remove('is-leaving');
+                body.classList.add('is-entering');
+                requestAnimationFrame(function () {
+                    requestAnimationFrame(function () {
+                        body.classList.remove('is-entering');
+                    });
+                });
+            }, 950);
+        }
+
+        var nudge = ['wheel', 'touchmove', 'scroll'];
+        nudge.forEach(function (type) {
+            window.addEventListener(type, handOff, { passive: true });
+        });
+        window.addEventListener('keydown', function (e) {
+            if ([' ', 'PageDown', 'ArrowDown', 'End', 'Enter'].indexOf(e.key) > -1) handOff();
+        });
+        if (landing) landing.addEventListener('click', handOff);
+
+        /* chrome appears on the first scroll or click, never before */
+        function reveal() {
+            body.classList.add('is-revealed');
+        }
+        window.addEventListener('scroll', reveal, { passive: true, once: true });
+        window.addEventListener('click', reveal, { once: true });
+
+        /* ------------------------------------------------------------------
+           Nav — sliding highlight, scroll-spy, smooth jumps
+           ------------------------------------------------------------------ */
+        var navItems = document.getElementById('navItems');
+        var items = navItems ? [].slice.call(navItems.children) : [];
+        var highlight = document.getElementById('navHighlight');
+        var sections = [
+            document.getElementById('bio'),
+            document.getElementById('projects'),
+            document.getElementById('interests')
+        ];
+        var current = 0;
+        var hovered = -1;
+
+        function moveHighlight() {
+            if (!highlight || !items.length) return;
+            var el = items[hovered > -1 ? hovered : current];
+            if (!el) return;
+            highlight.style.transform = 'translateX(' + el.offsetLeft + 'px)';
+            highlight.style.width = el.offsetWidth + 'px';
+            highlight.style.opacity = '1';
+        }
+
+        items.forEach(function (el, i) {
+            el.addEventListener('mouseenter', function () {
+                hovered = i;
+                moveHighlight();
+            });
+            el.addEventListener('click', function (e) {
+                var id = el.getAttribute('href');
+                if (!id || id.charAt(0) !== '#') return;
+                e.preventDefault();
+                handOff();
+                var target = document.querySelector(id);
+                if (!target) return;
+                var top = id === '#bio' ? 0 : target.offsetTop - 24;
+                window.scrollTo({ top: top, behavior: reduce ? 'auto' : 'smooth' });
+            });
+        });
+        if (navItems) {
+            navItems.addEventListener('mouseleave', function () {
+                hovered = -1;
+                moveHighlight();
+            });
+        }
+
+        function setCurrent(i) {
+            if (i === current) return;
+            current = i;
+            items.forEach(function (el, n) {
+                el.classList.toggle('is-current', n === i);
+            });
+            moveHighlight();
+        }
+
+        var spyPending = false;
+        window.addEventListener('scroll', function () {
+            if (holdUntil && Date.now() < holdUntil) {
+                toTop();
+                return;
+            }
+            if (spyPending) return;
+            spyPending = true;
+            requestAnimationFrame(function () {
+                spyPending = false;
+                var y = window.scrollY + window.innerHeight * 0.4;
+                var next = 0;
+                if (sections[1] && y >= sections[1].offsetTop) next = 1;
+                if (sections[2] && y >= sections[2].offsetTop) next = 2;
+                setCurrent(next);
+            });
+        }, { passive: true });
+
+        window.addEventListener('resize', moveHighlight);
+
+        /* ------------------------------------------------------------------
+           Theme — the toggle overrides the OS setting and is remembered
+           ------------------------------------------------------------------ */
+        var themeBtn = document.getElementById('themeToggle');
+
+        function labelTheme() {
+            var dark = document.documentElement.dataset.theme === 'dark';
+            themeBtn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        }
+
+        if (themeBtn) {
+            labelTheme();
+            themeBtn.addEventListener('click', function () {
+                var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+                document.documentElement.dataset.theme = next;
+                try {
+                    localStorage.setItem('theme', next);
+                } catch (err) { /* private mode */ }
+                labelTheme();
+            });
+        }
+
+        /* the mark is wider once its font lands, so the highlight re-measures */
+        document.fonts && document.fonts.ready.then(moveHighlight);
+        setCurrent(0);
+        items[0] && items[0].classList.add('is-current');
+        moveHighlight();
+    })();
     </script>
 </body>
 </html>
